@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=0">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        ul,li,img{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .photos{
+            overflow: hidden;
+        }
+    </style>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="photoshow.js"></script>
+</head>
+<body>
+<div class="photos" id="photos">
+
+</div>
+<script>
+    var imgData=[
+        {
+            url:"img/2.jpg",
+            width:476,
+            height:714
+        },
+        {
+            url:"img/3.jpeg",
+            width:475,
+            height:709
+        },
+        {
+            url:"img/4.jpeg",
+            width:544,
+            height:960
+        },
+        {
+            url:"img/5.png",
+            width:720,
+            height:960
+        },
+        {
+            url:"img/6.jpg",
+            width:640,
+            height:960
+        },
+        {
+            url:"img/7.jpg",
+            width:505,
+            height:484
+        },
+        {
+            url:"img/8.jpg",
+            width:336,
+            height:499
+        },
+        {
+            url:"img/9.jpg",
+            width:336,
+            height:499
+        }
+
+
+    ];
+    var p=new PhotoShow({
+        renderTo:"photos",
+        data:imgData
+
+    });
+    p.render();
+
+</script>
+</body>
+</html>
